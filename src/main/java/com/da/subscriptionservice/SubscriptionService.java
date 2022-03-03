@@ -1,27 +1,24 @@
 package com.da.subscriptionservice;
 
-import java.util.ArrayList;
-
 public class SubscriptionService implements ISearch {
 
-    SubscriptionArray subscriptionArray = new SubscriptionArray();
+    Subscription subscription_1 = new Subscription("стандарт", 190);
+    public Subscription subscription = new Subscription("вип", 990);
+    public Subscription presentSubscription = new Subscription("подарок");
+    Subscription freeSubscription = new Subscription("бесплатная");
+    Subscription freeSubscription1 = new Subscription("бесплатная");
 
-    ArrayList<Subscription> arrayListSu = subscriptionArray.arrayListSub;
-
-    int allCountSubscriptions = arrayListSu.size();
-    int countSubscriptions;
-    //String res = null;
+    public Subscription[] arrayListSu ={subscription_1, subscription, presentSubscription, freeSubscription, freeSubscription1};
 
     public String searchByName(String nameSubscription){
         int countSubscriptions = 0;
-        String res = null;
-
-        //nameSubscription = "free";
+        String res;
 
         for (Subscription sub : arrayListSu){
-            if (sub.getName() == nameSubscription){
+            System.out.println(sub.getName());
+            String s = sub.getName();
+            if (s.equals(nameSubscription)){ // тут была ошибка в прошлом семестре
                 countSubscriptions ++;
-                System.out.println(sub.getName());
             }
         }
 

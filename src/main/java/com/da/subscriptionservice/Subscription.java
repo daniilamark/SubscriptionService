@@ -13,6 +13,9 @@ public class Subscription implements IPrint {
         this.name = name;
     }
 
+    Subscription(){
+    }
+
     @Override
     public void printInfo() {
         System.out.println("Name: " + name + " price: " + price);
