@@ -19,7 +19,9 @@ public class MainController {
     @FXML
     private void click(ActionEvent event) {
         String a = textField.getText();
+
         result = service.searchByName(a);
+
         resultText.setText(result);
 
         System.out.println("===========");

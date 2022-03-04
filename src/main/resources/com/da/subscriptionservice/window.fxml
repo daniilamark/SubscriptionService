@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 
 
-<Pane fx:id="root" fx:controller="com.da.subscriptionservice.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="com.da.subscriptionservice.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button onAction="#click" fx:id="btn" layoutX="325.0" layoutY="100.0" mnemonicParsing="false" text="найти" />
       <Label layoutX="169.0" layoutY="41.0" text="Поиск подписки по названию" />

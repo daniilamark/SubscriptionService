@@ -3,7 +3,7 @@ package com.da.subscriptionservice;
 public class SubscriptionService implements ISearch {
 
     Subscription subscription_1 = new Subscription("стандарт", 190);
-    public Subscription subscription = new Subscription("вип", 990);
+    Subscription subscription = new Subscription("вип", 990);
     public Subscription presentSubscription = new Subscription("подарок");
     Subscription freeSubscription = new Subscription("бесплатная");
     Subscription freeSubscription1 = new Subscription("бесплатная");
